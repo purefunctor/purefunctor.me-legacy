@@ -3,6 +3,6 @@ from pfhome import views
 
 urlpatterns = [
     path("", views.home),
-    path("about/", views.soon),
+    path("about/", views.about),
     path("blog/", views.soon),
 ]

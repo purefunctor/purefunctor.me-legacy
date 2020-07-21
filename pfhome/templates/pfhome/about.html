@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block head %}
+<link rel="stylesheet" href="{% static 'pfhome/css/about.css' %}">
 <script src="{% static 'pfhome/js/burger.js' %}"></script>
 {% endblock head %}
 
@@ -35,4 +36,17 @@
     </div>
   </div>
 </nav>
+<section class="hero is-primary">
+  <div class="hero-body">
+    <h1 class="is-size-1 has-text-centered">About</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container" id="introduction">
+    <h1 class="is-size-3">
+      Greetings!
+    </h1>
+    <hr/>
+  </section>
+</section>
 {% endblock body %}

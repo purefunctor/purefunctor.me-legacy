@@ -29,3 +29,35 @@
 
   animation-fill-mode: forwards;
 }
+
+@keyframes fade-slide-down-animation {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-slide-down-animation {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-slide-up-animation {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fade-slide-down {
+  opacity: 0;
+  transform: translateY(-50%);
+
+  animation: 1s ease-out 500ms 1 fade-slide-up-animation;
+  -moz-animation: 1s ease-out 500ms 1 fade-slide-up-animation;
+  -webkit-animation: 1s ease-out 500ms 1 fade-slide-up-animation;
+
+  animation-fill-mode: forwards;
+}

@@ -10,11 +10,6 @@ hr {
   background-color: rgb(220, 220, 220);
 }
 
-/* Refactor once `django-simple-bulma` is updated */
-.short-footer {
-  padding: 1rem 1.5rem 1rem;
-}
-
 #introduction {
   width: 90%;
   max-width: 800px;

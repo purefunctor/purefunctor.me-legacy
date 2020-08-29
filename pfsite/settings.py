@@ -138,6 +138,11 @@ STATICFILES_FINDERS = [
 # Custom settings for django-simple-bulma
 
 BULMA_SETTINGS = {
-    "extensions": ["bulma-navbar-burger"],
+    "extensions": [
+        "bulma-navbar-burger",
+    ],
+    "variables": {
+        "footer-padding": "1rem 1.5rem 1rem",
+    },
     "output_style": "compressed",
 }

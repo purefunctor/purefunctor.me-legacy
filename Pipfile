@@ -10,10 +10,6 @@ pre-commit = "*"
 [packages]
 django = "*"
 django-environ = "*"
-gunicorn = "*"
-psycopg2-binary = "*"
-django-heroku = "*"
-whitenoise = "*"
 
 [requires]
 python_version = "3.8"

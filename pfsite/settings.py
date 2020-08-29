@@ -134,3 +134,10 @@ STATICFILES_FINDERS = [
   'django.contrib.staticfiles.finders.AppDirectoriesFinder',
   'django_simple_bulma.finders.SimpleBulmaFinder',
 ]
+
+# Custom settings for django-simple-bulma
+
+BULMA_SETTINGS = {
+    "extensions": ["bulma-navbar-burger"],
+    "output_style": "compressed",
+}

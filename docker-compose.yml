@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: docker/gunicorn/Dockerfile
-    command: gunicorn pfsite.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn pfsite.wsgi:application --bind 0.0.0.0:8000 --workers 2
     volumes:
       - .:/app
     expose:

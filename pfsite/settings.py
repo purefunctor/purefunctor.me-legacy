@@ -31,7 +31,7 @@ DEBUG = env("DEBUG")
 
 INTERNAL_IPS = ["127.0.0.1", "localhost"]
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "purefunctor.me"]
 
 
 # Application definition

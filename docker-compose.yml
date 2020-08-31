@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   gunicorn:
+    container_name: gunicorn
     build:
       context: .
       dockerfile: docker/gunicorn/Dockerfile
@@ -14,6 +15,7 @@ services:
       - ./.env
 
   nginx:
+    container_name: nginx
     build:
       context: .
       dockerfile: docker/nginx/Dockerfile

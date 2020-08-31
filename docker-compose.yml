@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  gunicorn:
+    build:
+      context: .
+      dockerfile: docker/gunicorn/Dockerfile
+    command: gunicorn pfsite.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    expose:
+      - 8000
+    env_file:
+      - ./.env
+
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./static/:/app/static/
+    depends_on:
+      - gunicorn
